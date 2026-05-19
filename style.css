@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
   font-family: Arial, sans-serif;
   background: linear-gradient(135deg, #74b9ff, #a29bfe);
@@ -124,3 +125,131 @@ button:hover {
 .forecast-card:hover {
   transform: scale(1.03);
 }
+=======
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #74b9ff, #a29bfe);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.app {
+  background: white;
+  padding: 25px;
+  border-radius: 16px;
+  text-align: center;
+  width: 90%;
+  max-width: 350px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+p {
+  margin: 5px 0;
+}
+
+input {
+  padding: 10px;
+  width: 100%;
+  max-width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  background: #6c5ce7;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 250px;
+}
+
+button:hover {
+  background: #5a4bcf;
+}
+
+#result {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 15px;
+  background: #f7f8fc;
+}
+
+.loader {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #ddd;
+  border-top: 4px solid #6c5ce7;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 20px auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 20px;
+  }
+
+  .app {
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    text-align: center;
+    width: 90%;
+    max-width: 380px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(10px);
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+}
+
+#forecast {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.forecast-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 12px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+}
+
+.forecast-card:hover {
+  transform: scale(1.03);
+}
+>>>>>>> 412c28e97025ac89cccb2b45a4be6f6f9a90dc31
